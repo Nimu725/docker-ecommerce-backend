@@ -55,7 +55,7 @@ public class ProductController {
             product.setImagePath(fileName); // Store only file name in DB
 
             productRepository.save(product);
-            return ResponseEntity.ok("Product uploaded successfully!.....");
+            return ResponseEntity.ok("Product uploaded successfully!check once again.!");
         } catch (IOException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to upload product image");
         }
